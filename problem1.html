@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>problem 1</title>
+
+    </head>
+    <body>
+       <label for="name"> enter your name</label>
+       <input id="name" type="text"/>
+       <button id="button">click me</button>  
+<script>
+let n = document.getElementById("name");
+let button = document.getElementById("button");
+console.log(n)
+button.onclick = function(){
+    alert("Hello " + n.value);
+    console.log("Hello " + n.value);
+}
+</script>
+    </body>
+
+</html>

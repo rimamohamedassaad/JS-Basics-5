@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>problem 1</title>
+
+</head>
+
+<body>
+    <button id="prime">print prime num 2 to 30</button>
+    <script>
+        let btnprime = document.getElementById("prime");
+
+
+        btnprime.onclick = function () {
+            for (let i = 2; i <= 30; i++) {
+                let prime = true;
+                for (let j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        prime = false;
+                        break;
+                    }
+                }
+                if (i > 1 && prime == true) {
+                    console.log(i);
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

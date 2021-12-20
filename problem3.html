@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>problem 1</title>
+
+</head>
+
+<body>
+    <label for="number"> enter your number</label>
+    <input id="number" type="text" />
+    <button id="button">click me</button>
+    <script>
+        let n = document.getElementById("number");
+        let button = document.getElementById("button");
+
+        button.onclick = function () {
+            sum=0;
+            for(i=1; i <= parseInt(n.value); i++){
+                sum=sum+i;
+            }
+            alert(sum);
+            console.log(sum);
+        }
+    </script>
+</body>
+
+</html>

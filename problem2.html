@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>problem 1</title>
+
+</head>
+
+<body>
+    <label for="name"> enter your name</label>
+    <input id="name" type="text" />
+    <button id="button">click me</button>
+    <script>
+        let n = document.getElementById("name");
+        let button = document.getElementById("button");
+
+        button.onclick = function () {
+            if ((n.value).toLowerCase() === "alice" || (n.value).toLowerCase() === "bob") {
+                alert("Hello " + n.value);
+                console.log("Hello " + n.value);
+            } else {
+                alert("Hello Stranger");
+                console.log("Hello Stranger");
+            }
+        }
+    </script>
+</body>
+
+</html>

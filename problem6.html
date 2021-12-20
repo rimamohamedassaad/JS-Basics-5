@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>problem 1</title>
+
+</head>
+
+<body>
+    <label for="number"> enter your number</label>
+    <input id="number" type="text" />
+    <button id="multiplication">multiplication table</button>
+    <script>
+        let n = document.getElementById("number");
+        let btnmultiplication = document.getElementById("multiplication");
+        btnmultiplication.onclick = function () {
+            for (let i = 1; i <= 12; i++) {
+                const result = i * n.value;
+                console.log(n.value +" * " + i + " = " + result);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

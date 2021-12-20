@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>problem 1</title>
+
+</head>
+
+<body>
+    <label for="number"> enter your number</label>
+    <input id="number" type="text" />
+    <button id="play">play</button>
+    <script>
+        let n = document.getElementById("number");
+        let button = document.getElementById("play");
+        let sum = 0;
+        let correct = 48;
+
+        button.onclick = function () {
+            sum++;
+            if (sum < 9) {
+             if(parseInt(n.value) > 100 && parseInt(n.value) < 1){
+                 alert('please enter a number between 1 and 100');
+             }
+             else if((parseInt(n.value) <= 100 && parseInt(n.value) >=70 )|| ((parseInt(n.value) >= 1 && parseInt(n.value) <=30 ))){
+                  alert('to large trial : '+ sum + '/8')
+             }
+             else if((parseInt(n.value) <= 69 && parseInt(n.value) >=49) || (parseInt(n.value) <= 47 && parseInt(n.value) >=31)){
+                 alert('to small trial ; ' + sum + '/8')
+             }else if(parseInt(n.value) === correct){
+                alert("correct with " + sum + "trial")
+                alert('play again');
+                sum = 0;
+             }
+
+            } else {
+                alert("Game over, Try again")
+                sum = 0;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
